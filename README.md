@@ -1,5 +1,5 @@
-# Colaboradores
+# 👥 Colaboradores
 
-Caroliny Cagnoni  
-Ingrid Caroline  
-Luan Victor  
+[Caroliny Cagnoni](https://github.com/cgcagnoni)  
+[Ingrid Caroline](https://github.com/Caroline-githubb)  
+[Luan Victor](https://github.com/LuanME)  
