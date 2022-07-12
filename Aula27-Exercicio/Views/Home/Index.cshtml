@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Aula 27";
+}
+
+<!-- definido array-->
+@{
+    string[] tarefas = { "Tarefa 1", "Tarefa 2", "Tarefa 3", "Tarefa 4", "Tarefa 5" };
+}
+
+<!-- título -->
+<h2>Todo list</h2>
+
+<!-- formulário -->
+<form class="row g-3">
+    <div class="col">
+        <label for="inputPassword2" class="visually-hidden">Tasks</label>
+        <input type="text" class="form-control" id="inputPassword2" placeholder="Add tasks...">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">+</button>
+    </div>
+</form>
+
+<!-- título -->
+<h3>My tasks</h3>
+
+<!-- lista-->
+<div class="list">
+    <div class="row g-3">
+        <div class="col py-5">
+            <h2 class="h5 mb-4">My tasks</h2>
+                <ul class="list-group" data-todo-target="list">
+                    @foreach (var tarefa in tarefas)
+                     {
+                       <li class="list-group-item d-flex align-items-center py-3">
+                            <input class="form-check-input me-2"
+                               type="checkbox">
+                                   <div class="flex-fill">
+                                    @tarefa
+                                    </div>
+                            <button class="btn btn-sm btn-danger">
+                            Delete
+                            </button>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</div>
